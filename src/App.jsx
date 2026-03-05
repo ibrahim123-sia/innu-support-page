@@ -62,7 +62,7 @@ const App = () => {
   };
 
   // Fixed WhatsApp URL - use country code without '+' and proper format
-  const whatsappNumber = "18325523050"; // Replace with your actual number
+  const whatsappNumber = "18327793564"; // Replace with your actual number
   const whatsappMessage = "Hello, I need help with your service.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -151,7 +151,7 @@ const App = () => {
                   Speak directly with our team
                 </p>
                 <p className="text-blue-600 text-lg font-medium mt-2">
-                  +1 (832) 552-3050
+                  +1 (832) 779-3564
                 </p>
               </div>
             </div>
@@ -176,7 +176,7 @@ const App = () => {
                   Send us your detailed question
                 </p>
                 <p className="text-red-500 text-lg font-medium mt-2">
-                  danish@mytransmissionexperts.com
+                  info@mytransmissionexperts.com
                 </p>
               </div>
             </div>
