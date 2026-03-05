@@ -183,43 +183,7 @@ const App = () => {
           </div>
         </div>
 
-        {/* ACTIVE CONTACT */}
-        <div className="bg-white border rounded-xl p-6 mb-12 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-800">
-              {activeContact === "phone"
-                ? "Chat with our support team"
-                : "Send us an email"}
-            </h4>
-            <p className="text-gray-500 text-sm">
-              {activeContact === "phone"
-                ? "Instant help via WhatsApp."
-                : "We'll reply with a detailed solution."}
-            </p>
-          </div>
-
-          {activeContact === "phone" ? (
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 inline-flex items-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.554 4.122 1.523 5.855L.055 23.28c-.114.455.297.866.752.752l5.425-1.468C7.878 22.446 9.875 23 12 23c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.888 0-3.663-.515-5.2-1.414l-.375-.222-3.452.935.935-3.452-.222-.375C3.515 15.663 3 13.888 3 12c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9z"/>
-              </svg>
-              WhatsApp
-            </a>
-          ) : (
-            <a
-              href={emailUrl}
-              className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
-            >
-              Send Email
-            </a>
-          )}
-        </div>
+       
 
         {/* FAQ SECTION */}
         <div className="bg-white rounded-xl shadow-md overflow-hidden">
@@ -260,31 +224,7 @@ const App = () => {
           </div>
         </div>
 
-        {/* FOOTER CTA */}
-        <div className="mt-10 text-center bg-white border rounded-xl p-6">
-          <h3 className="font-semibold text-lg mb-2">
-            Still need help?
-          </h3>
-          <p className="text-gray-500 text-sm mb-4">
-            Our support team is ready to assist you.
-          </p>
-
-          <div className="flex justify-center gap-6">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-600 hover:text-green-700 transition-colors inline-flex items-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.554 4.122 1.523 5.855L.055 23.28c-.114.455.297.866.752.752l5.425-1.468C7.878 22.446 9.875 23 12 23c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.888 0-3.663-.515-5.2-1.414l-.375-.222-3.452.935.935-3.452-.222-.375C3.515 15.663 3 13.888 3 12c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9z"/>
-              </svg>
-              WhatsApp
-            </a>
-
-          </div>
-        </div>
+       
       </div>
     </div>
   );
